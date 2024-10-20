@@ -14,7 +14,7 @@ type Candidate = {
 };
 
 const CandidateCard: React.FC<Candidate> = ({ name, login, location, avatar_url, email, html_url, company, bio }) => {
-    const defaultAvatar = './images/placeholderimage.png'; 
+    const defaultAvatar = './assets/images/placeholderimage.png'; 
     const avatarSrc = avatar_url || defaultAvatar; // Use default image if avatar_url is not available
 
     return (
