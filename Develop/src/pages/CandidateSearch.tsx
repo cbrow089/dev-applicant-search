@@ -1,8 +1,11 @@
-import { useState, useEffect } from 'react';
-import { searchGithub, searchGithubUser } from '../api/API';
+import CandidateCard from '../components/CandidateCard'; // Import the CandidateCard component here
 
 const CandidateSearch = () => {
-  return <h1>CandidateSearch</h1>;
+    return (
+        <div>
+            <CandidateCard /> {/* Render the CandidateCard component here */}
+        </div>
+    );
 };
 
 export default CandidateSearch;

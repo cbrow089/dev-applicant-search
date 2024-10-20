@@ -1,8 +1,10 @@
+import PotentialCandidates from "../components/PotentialCandidates";
+
 const SavedCandidates = () => {
   return (
-    <>
-      <h1>Potential Candidates</h1>
-    </>
+    <div>
+    <PotentialCandidates /> {/* Render the PotentialCandidates component here */}
+  </div>
   );
 };
 
