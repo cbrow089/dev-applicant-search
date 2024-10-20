@@ -41,6 +41,35 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-align: center;
+}
+
+.ButtonA {
+  background-color: #ff4d4d; /* Red background */
+  color: white;              /* White text */
+  border: none;              /* No border */
+  padding: 15px 20px;        /* Padding around the text */
+  border-radius: 50%;        /* Rounded corners */
+  cursor: pointer;           /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.ButtonA:hover {
+  background-color: #ff1a1a; /* Darker red on hover */
+}
+
+.ButtonB {
+  background-color: #34c759; /* Green background */
+  color: white;              /* White text */
+  border: none;              /* No border */
+  padding: 15px 20px;        /* Padding around the text */
+  border-radius: 50%;        /* Rounded corners */
+  cursor: pointer;           /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.ButtonB:hover {
+  background-color: #2e865f; /* Darker green on hover */
 }
 
 button {
@@ -53,6 +82,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  
 }
 button:hover {
   border-color: #646cff;
@@ -60,6 +90,24 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.button-container {
+  display: flex; /* Make the container a flex container */
+  justify-content: space-between; /* Equally space the buttons */
+}
+
+.circle-button {
+  width: 40px; /* Set the width */
+  height: 40px; /* Set the height */
+  border-radius: 50%; /* Make it circular */
+  background-color: red; /* Set the background color to red */
+  color: white; /* Set the text color to white for contrast */
+  border: none; /* Remove border */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  display: flex; /* Center the content */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
 }
 
 @media (prefers-color-scheme: light) {
